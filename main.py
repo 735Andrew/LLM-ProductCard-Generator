@@ -1,4 +1,5 @@
 from cli import namespace
+from app import run
 
 if __name__ == "__main__":
-    print(namespace.products[0])
+    run(namespace.products)

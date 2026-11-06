@@ -1,17 +1,14 @@
 import argparse
-import sys
 
 parser = argparse.ArgumentParser(
-    description="Takes set of products",
+    description="CLI for communicating with an LLM",
     formatter_class=argparse.RawTextHelpFormatter,
 )
 
 parser.add_argument(
-    "--products",
-    "-p",
-    nargs=1,
-    default={},
-    help="Expects set of products."
+    "--products", "-p",
+    nargs="+",
+    help="Accepts multiple product JSON objects"
 )
 
-namespace = parser.parse_args(sys.argv[1:])
+namespace = parser.parse_args()
