@@ -48,7 +48,8 @@ def report_output(output: dict) -> None:
     try:
         pprint(output["choices"][0]["message"]["content"])
     except Exception as e:
-        print(f"Error: '{e.__class__.__name__}' while printing LLM response: '{e}'.")
+        print(f"Error: '{e.__class__.__name__}' while printing LLM response.")
+        pprint(output)
 
 
 def run(products: list) -> None:
