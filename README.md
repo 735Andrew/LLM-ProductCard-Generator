@@ -30,7 +30,7 @@ Create a <b>.env</b> file in the root directory with the following variable:
 LLM_API_TOKEN = <YOUR_API_TOKEN>
 ```
 This project uses <b>Atria</b> as its LLM provider. <br>
-You can obtain an API token here: :link:https://api.atria-asi.ai/docs:link:
+You can obtain an API token here: :link: https://api.atria-asi.ai/docs :link:
 
 <br>
 Open a terminal in the root directory and execute this command:
